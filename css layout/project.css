@@ -1,0 +1,170 @@
+body {
+	background-color: white;
+}
+.wrapper {
+	width: 90%;
+	margin: auto;
+}
+.wrapper:after {
+	display: block;
+	clear:both;
+	content: '';
+}
+.header {
+	padding: 10px;
+	background-color: #ffffff;
+}
+.header .head-logo {
+	width: 15%;
+	display: inline-block;
+}
+.header .head-content {
+	width: 30%;
+	display: inline-block;
+}
+.header .head-right-section {
+	float: right;
+}
+p {
+	text-align: right;
+}
+.nav {
+	padding: 10px;
+	background-color: #303030;
+}
+.nav .nav-list ul li {
+	display: inline-block;
+	padding: 5px;
+	width: 7%;
+    color: white;
+    text-align: center;
+    border-right: 1px solid white;
+    cursor: pointer;
+}
+.active {
+	background-color: green;
+
+}
+.body {
+	background-image: url('D:\\css layout\\images\\banner.jpg');
+	height: 400px;
+}
+.body .content-left {
+	border:1px solid gray;
+	height: 400px;
+	width: 350px;
+	background-color: #383f43;
+	opacity: 0.6;
+	color: white;
+}
+.body .content-left p {
+	text-align: justify;
+	padding:10px;
+	line-height: 1.5;
+}
+.body .content-left h1 {
+	text-align: center;
+}
+.content-right-bottom {
+	float: left;
+}
+ .content-right-bottom .content-right-bottom-inside {
+	float:left;
+    width: 30%;
+    line-height: 1.5;
+	}
+.content-right-bottom .content-right-bottom-inside p {
+	text-align: justify;
+}
+.content-right-bottom .content-right-bottom-inside-right {
+	float: left;
+	width: 34%;
+    margin-left: 34px;
+    line-height: 1.5;
+}
+.content-right-bottom .content-right-bottom-inside-right p {
+	text-align: justify;
+}
+.content-right-bottom-inside-right-middle {
+	float: left;
+	width: 30%;
+    margin-left: 32px;
+    line-height: 1.5;
+}
+.content-right-bottom-inside-right-middle p{
+	text-align: justify;
+}
+.images {
+	clear: both;
+	display: inline-block;
+	width: 100%;
+}
+.images .image-1 {
+	width: 24%;
+	display: inline-block;
+	text-align: center;
+}
+.footer {
+	padding: 10px;
+	background-color: #303030;
+	color: white;
+	text-align: center;
+}
+
+@media only screen and (max-width:767px) {
+	/*this is for mobile*/
+	.header .head-logo,
+	.header .head-content,
+	.content-left,
+	.image-1,
+	.body .content-left {
+		width: 100%;
+	}
+	 .content-right-bottom .content-right-bottom-inside, 
+	 .content-right-bottom .content-right-bottom-inside-right,
+	 .content-right-bottom .content-right-bottom-inside-right-middle {
+		width: 100%;
+		margin-left: 0px;
+	}
+
+	.head-right-section {
+		position: absolute;
+	    top: 15px;
+	    right: 3px;
+	}
+	ul {
+		padding: 10px;
+	}
+ 
+	.nav .nav-list ul li {
+		display: block;
+		width: 100%;
+		border-right: none;
+	}
+	.wrapper .images>div.image-1 {
+		width: 100%;
+	}
+	.wrapper .images>div.image-1 p {
+		text-align: center;
+	}
+  
+}
+@media only screen and (min-width: 768px) and (max-width: 991px){
+	/*this is for Tablet*/
+	.nav .nav-list ul li {
+   	width: 9%;
+}
+.content-right-bottom .content-right-bottom-inside, 
+.content-right-bottom .content-right-bottom-inside-right,
+.content-right-bottom .content-right-bottom-inside-right-middle {
+	width: 30%;
+}
+.images .image-1 img {
+	width: 177px;
+	margin: 10px;
+}
+.images .image-1 p {
+	width: 160px;
+	font-size: 10px;
+}
+}
